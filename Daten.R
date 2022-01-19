@@ -24,5 +24,5 @@ df$Mathe_LK <- ifelse( abs(as.numeric(df$Interesse_Math) - as.numeric(df$Interes
 
 df
 setwd("/Users/is/Documents/GitHub/wissArbeiten_Gruppe_11")
-write.csv(x = df,file = "data.csv")
+write.csv(x = df,file = "Daten.csv")
 
