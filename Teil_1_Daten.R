@@ -3,7 +3,7 @@
 set.seed(1)
 # (1)Alter:
 Alter <- rnorm(100, mean = 25, sd = 2)
-round(Alter,0)
+Alter <- round(Alter,0)
 # (2)Studienfach:
 fach <- c("Statistik", "Data Science", "Mathe", "Informatik") 
 
@@ -22,6 +22,6 @@ df <- data.frame(Alter, Studienfach, Interesse_Math, Interesse_Prog)
 df$Mathe_LK <- ifelse( abs(as.numeric(df$Interesse_Math) - as.numeric(df$Interesse_Prog)) < "4", 1, 0)
 
 df
-setwd("/Users/is/Documents/GitHub")
+setwd("/Users/is/Documents/GitHub/wissArbeiten_Gruppe_11")
 write.csv(x = df,file = "data.csv")
 
