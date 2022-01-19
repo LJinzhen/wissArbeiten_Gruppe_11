@@ -3,7 +3,7 @@
 set.seed(1)
 # (1)Alter:
 Alter <- rnorm(100, mean = 25, sd = 2)
-
+round(Alter,0)
 # (2)Studienfach:
 fach <- c("Statistik", "Data Science", "Mathe", "Informatik") 
 
