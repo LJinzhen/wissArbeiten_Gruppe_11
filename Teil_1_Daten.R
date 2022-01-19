@@ -22,3 +22,6 @@ df <- data.frame(Alter, Studienfach, Interesse_Math, Interesse_Prog)
 df$Mathe_LK <- ifelse( abs(as.numeric(df$Interesse_Math) - as.numeric(df$Interesse_Prog)) < "4", 1, 0)
 
 df
+setwd("/Users/is/Documents/GitHub")
+write.csv(x = df,file = "data.csv")
+
